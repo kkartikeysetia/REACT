@@ -17,6 +17,14 @@ function App() {
     counter = counter + 1;
     setcounter(counter); // OR setcounter(counter+1)
   };
+  /* INTERVIEW QUESTION
+  const addvalue=()=>{
+    setcounter(prevCounter=> prevCounter+1)
+    setcounter(prevCounter=> prevCounter+1)
+    setcounter(prevCounter=> prevCounter+1)
+    setcounter(prevCounter=> prevCounter+1)
+  }
+    */
 
   const removevalue = () => {
     setcounter(counter - 1);
