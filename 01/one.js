@@ -30,6 +30,17 @@ primitives.
 reconciliation
 The algorithm React uses to diff one tree with another to determine which parts
 to be changed. (browser & react tree)
+
+****
+Reconciliation is the algorithm behind what is popularly understood as the "virtual DC
+A high-level description goes something like this: when you render a React applicatio
+tree of nodes that describes the app is generated and saved in memory. This tree is t
+flushed to the rendering environment — for example, in the case of a browser applica
+it's translated to a set of DOM operations. When the app is updated (usually via
+setstate ), a new tree is generated. The new tree is diffed with the previous tree to
+compute which operations are needed to update the rendered app.
+***
+
 update
 A change in the data used to render a React app. Usually the result of SsetStates
 Eventually results in a re-render.
