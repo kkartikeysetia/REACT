@@ -41,6 +41,16 @@ setstate ), a new tree is generated. The new tree is diffed with the previous tr
 compute which operations are needed to update the rendered app.
 ***
 
+INTERVIEW
+Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm descr
+in the React docs will be largely the same. The key points are:
+• Different component types are assumed to generate substantially different trees.
+React will not attempt to
+them, but rather replace the old tree completely.
+• Diffing of lists is performed using keys. Keys should be "stable, predictable, and
+unique."
+
+
 update
 A change in the data used to render a React app. Usually the result of SsetStates
 Eventually results in a re-render.
