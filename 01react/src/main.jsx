@@ -56,3 +56,13 @@ const reactelement = React.createElement(
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(reactelement);
+
+/* 6
+
+function App() {
+  const a = "https://google.com";
+
+  return <a href={a}>CLICK ME</a>;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+*/
