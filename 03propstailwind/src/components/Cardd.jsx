@@ -3,7 +3,8 @@ import React from "react";
 // function Cardd(props) { // jabbhi card function declare hota uske andar prop ka access hota h
 //  console.log("props", props);
 
-// eslint-disable-next-line react/prop-types
+// PROPS : JO NAAM YAHA PAS KIYA WAHI RETURN MAI BHI PASS KRNA
+// dynamic value h islye {} ismai wrap krte h & then render
 function Cardd({ username, btntext }) {
   console.log(username);
 
