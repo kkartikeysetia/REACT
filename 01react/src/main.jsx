@@ -51,7 +51,7 @@ const reactelement = React.createElement(
   // phele tag , fir object(prop add krta hai)
   "a",
   { href: "https://google.com", target: "_blank" },
-  "VISIT GOOGLE noww", // jo text inject krna h
+  "VISIT GOOGLE noww", // jo text inject krna h // yaha ifelse nhi likh skte h yeh evaluted expression
   aaaaaaaa // another var inject hogya
 );
 
