@@ -9,5 +9,12 @@ export const ThemeContext=createContext({ // pichle mai () ismai kuch nhi lia th
 // yaha aapne varaible bhi diya hai & method bhi 
 })
 // pichle mai usercontextprovider mai uske andar children pass kiya h
-// iss abr yahi ssai
-export const 
+// iss bar yahi ssai export varaible ko 
+export const ThemeProvider=ThemeContext.Provider
+
+// custom hook
+export default function useTheme(){
+    return useContext(ThemeContext)
+}
+// har jagah 2 bari import kar rhe thai (use context & usercontext)
+// yaha merko sirf use theme he import krna h use theme khud he use context ka ref dedega
