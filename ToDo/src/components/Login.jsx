@@ -9,8 +9,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Here you would normally verify the login credentials with your server
-    console.log("Login Data:", { name, password });
+
     // Redirect to a different page after successful login
     navigate("/dashboard");
   };
