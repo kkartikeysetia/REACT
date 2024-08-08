@@ -30,8 +30,7 @@ const Toggle = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // Here you would typically send the signup data to your server
-    console.log("Signup Data:", { name, password, email });
+
     // Redirect to the login page after signup
     navigate("/login");
   };
