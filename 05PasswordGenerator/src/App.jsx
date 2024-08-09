@@ -53,10 +53,23 @@ function App() {
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
-  // same like use call back
+  // Run code during the change in lifecycle of a component
+  // koi function pheli bari scrren pe aye
+  // jab uss component ki state update ho rhi h (cart mai proice total)uss time app function ki run krna chahte ho
+  // jab vo compoent screen sai hatt rha h (want to clean vlaue) (return mai cosnole) uss time app function ki run krna chahte ho
   useEffect(() => {
     passwordGenerator();
   }, [length, numberallowed, charallowed, passwordGenerator]); // password generate kai liye usko call bhi krna hai inside use effect
+
+  /* const[time,seTime]=usestate()
+  useEffect(()=>{
+    const timer=setTimeout(()=>setTime(time+1), 1000)
+    // pichla interval clear krna 
+    return function(){
+    clearInterval(timer)
+    }
+  }, [time])
+    */
 
   return (
     <>
