@@ -1,3 +1,5 @@
+// Functional components are a simple way to create components in React.
+
 const Square = (props) => {
   return (
     <div
@@ -5,7 +7,6 @@ const Square = (props) => {
       style={{
         border: "1px solid",
         height: "100px",
-        Weight: "100px",
         width: "100%",
         display: "flex",
         justifyContent: "center",
