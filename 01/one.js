@@ -54,6 +54,10 @@ unique."
 update
 A change in the data used to render a React app. Usually the result of SsetStates
 Eventually results in a re-render.
+
+USE STATE RETURN ARRAYS OF SIZE OF 2 
+0 TH INDEX ACTUAL VAL STATE KI 
+1 TH INDEX PER FUNCTION JO CHNAGE KREGA VAL KO 
  
 ********************************video 6 ~!!!1
 
