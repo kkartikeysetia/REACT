@@ -1,9 +1,9 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UserData from "./UserData";
 
 const Profile = () => {
   const [username, setUsername] = useState("naman-makkar");
+  const [inputValue, setInputValue] = useState(username); // Local state for input
   const [userdata, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -18,32 +18,30 @@ const Profile = () => {
       setLoading(false);
     }
   }
+
   const handleSubmit = () => {
-    if (username.trim()) {
-      // Only fetch if username is not empty
-      fetchGitHubData();
+    if (inputValue.trim()) {
+      setUsername(inputValue); // Update the username state
     }
   };
 
   useEffect(() => {
-    if (username) {
-      // Ensure username is not empty before fetching data
-      fetchGitHubData();
-    }
-  }, [username]);
+    fetchGitHubData();
+  }, [username]); // Fetch data only when username changes
 
   if (loading) {
     return <h1>Loading data! PLZ W8</h1>;
   }
+  // vAR SIA HE NHI GIA STATE SAI HOGA update islye onchange mai state hoga
   return (
     <div>
       <div>
         <input
           type="text"
-          value={username}
+          value={inputValue}
           placeholder="Search username"
-          onChange={(e) => setUsername(e.target.value)}
-        ></input>
+          onChange={(e) => setInputValue(e.target.value)} // Update input value
+        />
         <button onClick={handleSubmit}>Search</button>
       </div>
       {userdata !== null ? <UserData user={userdata} /> : null}
