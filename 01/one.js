@@ -58,7 +58,46 @@ Eventually results in a re-render.
 USE STATE RETURN ARRAYS OF SIZE OF 2 
 0 TH INDEX ACTUAL VAL STATE KI 
 1 TH INDEX PER FUNCTION JO CHNAGE KREGA VAL KO 
- 
+
+FUNCTIONAL COMPOENTS: JO COMPOENT HAM BNATE H FUNCTIONNKAI STYLE MAI
+
+STYLE : INLINE STYLE JO HAM ADD KRTE H STYLE:{{background: "blue" ,}} DIV MAI RETUEERN KAI ANDAR
+
+CLICK EVENTS : ONCHANGE/CLICK (3 WAYS)
+ (button onC1ick={hand1eC1ick}>C1ick It</button>
+
+ const handleC1ick2 = (name)
+console.10gC ${name} was clicked* )
+
+( button onC1ick= handleC1ick2( 'Dave')> It</button>
+
+(button onC1ick={(e)
+handleC1ick3(e)}>C1ick It</button>
+
+<e.target.value>
+ define the finction here handleclick & page laods called in action
+ yeh rreactfull way nhi hai 
+
+cosnt []=use state becoz state directlty change nhi krni chahe hogye 
+
+*******LIST & KEYS
+const Content = ()=>{
+    const [items, set Items]
+id: 1,
+checked: false,
+item: "One half pound bag of Cocoa Covered Almonds Unsalted"
+id: 2,
+checked: false,
+item: "Item 2"
+
+DISPALY LIST ITEMS INSDIE JSX
+DIspaPLY list in jsx is through map 
+<ul>
+{items.map((item)=>(
+    <li> </li>
+    ))}
+
+
 ********************************video 6 ~!!!1
 
 
