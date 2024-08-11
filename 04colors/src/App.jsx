@@ -1,6 +1,5 @@
 import { useState } from "react";
 function App() {
-  // eslint-disable-next-line no-unused-vars
   let [color, setColor] = useState("pink");
   return (
     <div
