@@ -1,1 +1,3 @@
-export default function Fav() {}
+export default function Fav() {
+  return <div>Fav</div>;
+}
