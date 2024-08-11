@@ -80,7 +80,7 @@ handleC1ick3(e)}>C1ick It</button>
 
 cosnt []=use state becoz state directlty change nhi krni chahe hogye 
 
-*******LIST & KEYS
+*******  LIST & KEYS
 const Content = ()=>{
     const [items, set Items]
 id: 1,
@@ -90,12 +90,26 @@ id: 2,
 checked: false,
 item: "Item 2"
 
-DISPALY LIST ITEMS INSDIE JSX
-DIspaPLY list in jsx is through map 
+DISPALY LIST ITEMS INSDIE JSX through map 
 <ul>
-{items.map((item)=>(
-    <li> </li>
-    ))}
+    const handleCheck = (id) => {
+        const listItems = items.map((item) => item.id === id ? { ...item, checked: !item.checked } : item);
+        setItems(listItems);
+         </li>
+
+          return (
+        <main>
+            {items.length ? (
+                <ul>
+                    {items.map((item) => (
+                        <li className="item" key={item.id}>
+                            <input
+                                type="checkbox"
+                                onChange={() => handleCheck(item.id)}
+                                checked={item.checked}
+                            />
+
+    ))} CHAPTER 7 DAVE Gray
 
 
 ********************************video 6 ~!!!1
