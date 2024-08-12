@@ -25,7 +25,7 @@ export default function Detail() {
       }
     }
     getRecipeDetails();
-  }, []);
+  });
 
   return (
     <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -36,6 +36,14 @@ export default function Detail() {
             className="w-full h-full object-cover block group-hover:scale-105 duration-300"
           />
         </div>
+      </div>
+      <div className="flex flex-col gap-3">
+        <span className="text-sm text-cyan-700 font-medium">
+          {recipeDetailsData?.recipe?.publisher}
+        </span>
+        <h3 className="font-bold text-2xl truncate text-black">
+          {recipeDetailsData?.recipe?.title}
+        </h3>
       </div>
     </div>
   );
