@@ -12,7 +12,7 @@ export default function Navbar() {
         <NavLink to={"/"}></NavLink>
         Food Recipe
       </h2>
-      {/* on submit of this form  get search value & based on that call api */}
+      {/* on submit of this form  get seaMY rch value & based on that call api */}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
