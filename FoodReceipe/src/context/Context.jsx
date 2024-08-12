@@ -10,22 +10,37 @@ export const GlobalContext = createContext(null);
 // Globalstate revcies all children all, the nested compoents in this application
 export default function Globalstate({ children }) {
   const [search, setSearch] = useState("");
-async function handleSubmit(e)=>{
+  // check loading if api is loading
+  const [loading, setLoading] = useState(false);
+  // render the lsit of recepires
+  const [recipeList, setRecipeList] = useState([]);
+
+  async function handleSubmit(e) {
     e.preventDefault();
     try {
-        
+      const res = await fetch(
+        `https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}`
+      );
+
+      const data = await res.json();
+      if (data?.data?.recipes) {
+        setRecipeList(data?.data?.recipes);
+        // reset the values
+        setLoading(false);
+        setSearch("");
+      }
+      console.log(data);
     } catch (e) {
-        console.log(e);
-        
-        
+      console.log(e);
+      setLoading(false);
+      setSearch("");
     }
-
-}
-
-
+  }
   // return will now provider will provide the state then consume
   return (
-    <GlobalContext.Provider value={{search, setSearch}}>
+    <GlobalContext.Provider
+      value={{ search, recipeList, loading, setSearch, handleSubmit }}
+    >
       {children}
     </GlobalContext.Provider>
   );
