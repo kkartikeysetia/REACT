@@ -1,9 +1,9 @@
 import React from "react";
 import UserContext from "./UserContext";
 
-// eslint-disable-next-line react/prop-types
 const UserContextProvider = ({ children }) => {
-  // jo bhi component aye as it is pass kardo
+  // jo bhi component aye as it is pass kardo proivder kai andar
+  // jo api calls krni hai ya kardo FUTURE nd yaha jo access mila h usko niche provideer mai pass kardo
   const [user, setUser] = React.useState(null); //no need to import use state DIRECTLY
   return (
     <UserContext.Provider value={{ user, setUser }}>
