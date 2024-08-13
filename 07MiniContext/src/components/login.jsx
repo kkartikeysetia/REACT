@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useContext } from "react";
 import UserContext from "../context/UserContext";
 function Login() {
