@@ -19,7 +19,7 @@ function App() {
    */
   const addTodo = () => {
     setTodos((prev) => [{ id: Date.now(), ...todos }, ...prev]);
-  };
+  }; // to do bnanana padega isliye pobject lia uniqye id li h (NEW TODO { id: Date.now(), ...todos )
   /* to-dos ek array hai usper ek loop lgana padega  , 
     then find konsi id wale array ki property ko  update ekrna chahte ho
     nd uske andar naya todo add  krednegye */
