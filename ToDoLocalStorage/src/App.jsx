@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import { TodoProvider } from "./Components";
+import { useEffect } from "react";
 
 function App() {
   // jo todos context sai aye gye unko store kregye
@@ -25,11 +26,15 @@ function App() {
     nd uske andar naya todo add  krednegye */
 
   const updatedTodo = (id, todo) => {
+    // konsa esa todo h jo id sai macth kr rha tanki new todo add ho jaye
     //When you add a new todo, you want to keep the old todos and add the new one to the list.
-    setTodos((prev) =>
-      prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo))
+    setTodos(
+      (prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)) // har ek element per jao uska id find karo
     );
-    // map sai har ek todo miljayega har ek todo object h nd ek object mai id h
+    // konsi id update krni ?
+    // to do array h usper loop lagya :map sai har ek todo miljayega
+    // ussai konsi arary ki id ko upade krna h ?
+    // map lagaya har todo milgya vo object h nd har object ki id h
     // prev todo is indivdual todo uske id per jao nd find ?
     // aagr id milgyi h toh dal do
   };
@@ -37,22 +42,41 @@ function App() {
   // naya array vo bnanan h jismai purani wali nhi ho (id)
   // jo match nhi krega vo aa jayega
   // delete kai time map is not prefeered
+
   const deleteTodo = (id) => {
+    // sirf id chahiye deletye hone kai liye
     //The filter function creates a new list that only includes todos whose id does not match the one you want to delete.
-    setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    setTodos((prev) => prev.filter((todo) => todo.id !== id)); // prev ka acess lena padega // jo jo match nhi kreega vo ajayega
   };
   // toogle :object kai andar jana compltred value ko toggle karo
   const ToggleCompleteTodo = (id) => {
-    setTodos.apply((prev) =>
-      prev.map((prevTodo) =>
-        prevTodo === id ? { ...prevTodo, completed: !prevTodo } : prevTodo
-      )
+    setTodos.apply(
+      (prev) =>
+        prev.map(
+          (prevTodo) =>
+            prevTodo === id ? { ...prevTodo, completed: !prevTodo } : prevTodo // true : false (agar match nhi kara prev todo ko prev todo he rhende do)
+        ) // ...prevTodo means phle sari values  leelo  & then overide karod complted value ko
     );
     // aagr id sai match krta hai tabhi toggle
     // false ki jagah prev to do rehnde do
   };
 
-  /**** LOCAL STORAGE ***/
+  /**** LOCAL STORAGE   SET : key & vlaue btanai padti h GET :  mai only key value   ***/
+  // jab application reload hoti h its possbile todos phele he ho toh vo load ho jaye
+  // konsa esa method h jo local storgae jakr sari values lao & usko todos ami isert karod
+  useEffect(() => {
+    //localStorage.getItem("todos"); // sari value string mai hoti h but json mai chahiye
+    const todos = JSON.parse(localStorage.getItem("todos"));
+    if (todos && todos.length > 0) {
+      setTodos(todos);
+    }
+  }, []); // aplication laod kari sari vlaues aagyi
+  // sari vlaues jo todos mai add ho rhi h unko  local storage mai add krwana chahta hun
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
+
   return (
     <TodoProvider
       value={{ todos, addTodo, deleteTodo, ToggleCompleteTodo, updatedTodo }}
