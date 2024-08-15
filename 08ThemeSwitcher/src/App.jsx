@@ -1,6 +1,6 @@
 import "./App.css";
 import { ThemeProvider } from "./context/theme";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 // AGAR EK ALAG COMPOMENT BNATE HO SWICTH KA TOH CARD KO KON BTAYEGA KI UPDATE HOGYA H (HTML STATE) agar vapsi toogle hua toh button  ko kon btayega (SYNC rehna )
 
 function App() {
