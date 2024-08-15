@@ -1,4 +1,4 @@
-import{useContext, createContext}from 'react'; // waha crate context bnaya then exportt
+import{useContext, createContext,useState}from 'react'; // waha crate context bnaya then exportt
 
 export const ThemeContext=createContext({ // pichle mai () ismai kuch nhi lia tha
 // jab context bane koi value feed ho phele sai hee 
