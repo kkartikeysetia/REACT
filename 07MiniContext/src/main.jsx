@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 // making dashboard for website
 // app sai dashboard sai right side sai top sai left data pass krna hia  (props kai andar props kai andar props)
-// un optmised becoz (jinko ned nhi thi unko bhi lena pdha becoz inke andar component h )
+// unoptmised becoz (jinko ned nhi thi unko bhi lena pdha becoz inke andar component h )
 // right side kai andar no need still data handle (islye handle kiya becoz data agye pass krna h)
 // ek global componnent bna do & ussai puch leta
 // component levl sai data pass kogye prop sai nhi
