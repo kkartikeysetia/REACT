@@ -16,8 +16,6 @@ updatedTodo:(id,todo)=>{}
 deleteTodo:(id)=>{}
 ToggleCompleteTodo:(id)=>{}
 
-
-
 });
 
 // directly ek hook export kr rhe h
@@ -27,7 +25,7 @@ useContext(TodoContext) and returns the context value.
  This allows you to access the current todos when u use (useTodo)
 */
 export const useTodo = () => {
-    
+
   return useContext(TodoContext); // JAB BHI USE CONTEXT USE KRNA H USKO HMESHA CONTEXT CHAHIYE (KISKE NBARE MAI BAAT KRNI H )
 };
 // maiN file mai jakar .provider krne sai acha yeh karlo
