@@ -12,7 +12,7 @@ const UserContextProvider = ({ children }) => {
   );
 };
 export default UserContextProvider;
-// wrap krne kai liye likhna padega {UserContext.Provider}
+//wrap krne kai liye likhna padega {UserContext.Provider}
 // koi data dengye usko hee provide krega na
 // provider sai wrap kiya but konsi value sai access de rhe ho [[value={user, setUser}]]
 // jo upar access mila usko mila provider mai pass kardo
