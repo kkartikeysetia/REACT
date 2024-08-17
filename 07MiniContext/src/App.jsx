@@ -16,7 +16,7 @@ function App() {
 export default App;
 // This component handles user input (username and password) and updates the global state when the user submits the form.
 // Context Usage: It uses setUser from the Context to update the shared user data.
-// jo component yaha lengye h1 mai uska access milega app
+// Jo component yaha lengye h1 mai uska access milega app
 // so lets make 2 compomets
 /* 
 Avoid Prop Drilling:
