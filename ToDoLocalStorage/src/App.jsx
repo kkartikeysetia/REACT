@@ -7,7 +7,7 @@ function App() {
   // jo todos context sai aye gye unko store kregye
   const [todos, setTodos] = useState([]);
 
-  // define methods
+  //define methods
   /* individuals todo nhi aya h abhi TODOS hai 
    to do  jana chahiye arrys kai andar (todos) but its possbile uske andar values ho 
    setTodos(todo ) issai purani sari values delete ho jaye gyi & todo aa jayega BUT WE DONT WANT THIS
