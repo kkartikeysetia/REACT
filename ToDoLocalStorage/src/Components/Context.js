@@ -18,7 +18,7 @@ ToggleCompleteTodo:(id)=>{}
 
 });
 
-// directly ek hook export kr rhe h
+directly ek hook export kr rhe h
 /* 
 Usage: When you use useTodo in a component, it internally calls 
 useContext(TodoContext) and returns the context value.
