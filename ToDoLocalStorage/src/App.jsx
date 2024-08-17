@@ -8,7 +8,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   //define methods
-  /* individuals todo nhi aya h abhi TODOS hai 
+  /* Individuals todo nhi aya h abhi TODOS hai 
    to do  jana chahiye arrys kai andar (todos) but its possbile uske andar values ho 
    setTodos(todo ) issai purani sari values delete ho jaye gyi & todo aa jayega BUT WE DONT WANT THIS
    toh hamko purani state ka access chahiye 
