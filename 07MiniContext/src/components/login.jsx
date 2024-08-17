@@ -40,5 +40,5 @@ function Login() {
   );
 }
 export default Login;
-// main thing jo usercontext kai andar value h usko kaise fecth krna h
+// main thing jo usercontext kai andar value h usko kaise fetch krna h
 // use state ki tarah he hook h
