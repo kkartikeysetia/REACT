@@ -7,7 +7,7 @@ export const TodoContext = createContext({
       todo: "msg",
       completed: false, 
     },
-    // {}, {} ese  todos aDD HO gye
+// {}, {} ese  todos aDD HO gye
   ],
   // upar hogyi properties (values) niche uski functionality(method) (only defiantion)
 // ap merko todo pass karogye function koi kam krega
