@@ -15,8 +15,7 @@ function App() {
    CAALBACK SAI ISKE PURANI STATE KI VALUE MILJAYE GYI (prev sai purana array milgya )
    new arrays bnaya usmai purani value bhi daldo & new wali bhi 
    purani spread kardi ... prev 
-
-   */
+*/
   const addTodo = () => {
     setTodos((prev) => [{ id: Date.now(), ...todos }, ...prev]);
   }; // to do bnanana padega isliye pobject lia uniqye id li h (NEW TODO { id: Date.now(), ...todos )
