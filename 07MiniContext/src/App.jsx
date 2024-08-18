@@ -18,6 +18,7 @@ export default App;
 // Context Usage: It uses setUser from the Context to update the shared user data.
 // Jo component yaha lengye h1 mai uska access milega app
 // So lets make 2 compomets
+
 /* 
 Avoid Prop Drilling:
 
