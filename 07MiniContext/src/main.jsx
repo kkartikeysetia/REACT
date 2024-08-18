@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // unoptmised becoz(jinko ned nhi thi unko bhi lena pdha becoz inke andar component h )
 // right side kai andar no need still data handle (islye handle kiya becoz data agye pass krna h)
 // ek global componnent bna do & ussai puch leta
-// component levl sai data pass kogye prop sai nhi
+// Component levl sai data pass kogye prop sai nhi
 // isko bolte h prop drillling
 
 // CONTEXT API -> ek global varaible jiske andar sara data jayega
