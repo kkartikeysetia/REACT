@@ -2,7 +2,7 @@ import{useContext, createContext,useState}from 'react'; // waha crate context bn
 
 export const ThemeContext=createContext({//pichle mai () ismai kuch nhi lia tha
 //Jab context bane koi value feed ho phele sai hee 
-//yaha mai chahta hun koi object default value ho becoz directly koi call krdega toh crash hojayega 
+//Yaha mai chahta hun koi object default value ho becoz directly koi call krdega toh crash hojayega 
     themeMode:"light"
     // just 2 methods 
     darkTheme:()=>{}
