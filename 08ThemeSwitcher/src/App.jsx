@@ -13,7 +13,7 @@ function App() {
     setThemeMode("dark");
   };
 
-  // Actual change in theme
+  // Actual change in themee
   useEffect(() => {
     document.querySelector("html").classList.remove("light", "dark");
     document.querySelector("html").classList.add(themeMode);
