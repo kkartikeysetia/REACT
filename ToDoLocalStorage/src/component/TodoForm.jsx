@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTodo } from "../contexts/TodoContext";
 
 function TodoForm() {
-  const [todo, setTodo] = useState(""); //Indivdiual todo
+  const [todo, setTodo] = useState(""); //Indiviual todo
   const { addTodo } = useTodo();
 
   const add = (e) => {
