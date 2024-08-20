@@ -9,7 +9,7 @@ export const TodoContext = createContext({
     },
 // {}, {} ese  todos aDD HO gye
   ],
-// upar hogyi properties (values) niche uski functionality(method) (only defiantion)
+// Upar hogyi properties (values) niche uski functionality(method) (only defiantion)
 // ap merko todo pass karogye function koi kam krega
 addTodo:(todo)=>{}
 updatedTodo:(id,todo)=>{}
