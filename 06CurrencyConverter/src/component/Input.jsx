@@ -1,5 +1,5 @@
 import React, { useId } from "react";
-// useId is reacxt hook for generating unique ids thjat can be passed to accesibley attributes (user tap krke acces le skta h)
+// UseId is reacxt hook for generating unique ids thjat can be passed to accesibley attributes (user tap krke acces le skta h)
 
 function Input({
   label,
@@ -28,11 +28,11 @@ function Input({
           className="outline-none w-full bg-transparent py-1.5"
           type="number"
           placeholder="Amount"
-          // input foield enabled ya disabled (disable property tells)
+          // Input foield enabled ya disabled (disable property tells)
           disabled={amountDisable}
           value={amount}
           onChange={(e) =>
-            // agar yeh avaible tohi yeh use krengye
+            // Agar yeh avaible tohi yeh use krengye
             onAmountChange && onAmountChange(Number(e.target.value))
           }
         />
