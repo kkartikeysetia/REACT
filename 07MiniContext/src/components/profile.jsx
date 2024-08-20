@@ -9,4 +9,4 @@ function Profile() {
   return <div>Welcome {user.username}</div>;
 }
 export default Profile;
-//Yaha data lene kai liye kyaa krna hoga set user ki jagah user likhna hai
+//Yaha data lene kai liye kya krna hoga set user ki jagah user likhna hai
