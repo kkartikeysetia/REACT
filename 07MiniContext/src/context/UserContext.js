@@ -9,7 +9,7 @@ Componensts bnaye wrap kiya usercontext sai toh yeh ban gya : provider meeans
 iske andar jo bhi componensts unko access milgya global context ka & sari states ka through user context
 
 
-<usercontext>
+<Usercontext>
 <login></login>
 <Card></Card>
 </usercontext>
