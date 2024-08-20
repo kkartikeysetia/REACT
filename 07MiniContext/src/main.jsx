@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-// making dashboard for website
+// Making dashboard for website
 // App sai dashboard sai right side sai top sai left data pass krna hia  (props kai andar props kai andar props)
 // Unoptmised becoz(jinko ned nhi thi unko bhi lena pdha becoz inke andar component h )
 // right side kai andar no need still data handle (islye handle kiya becoz data agye pass krna h)
