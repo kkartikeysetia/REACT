@@ -15,7 +15,7 @@ function App() {
   const passwordRef = useRef(null);
   // refernce kai liye apko har input kai andar pass krna hoga
 
-  /*  useCallback you can prevent unnecessary re-renders, optimize performance,
+  /*  UseCallback you can prevent unnecessary re-renders, optimize performance,
    and ensure that your functions are only recreated when their dependencies change.
    */
   // PASSWORD GENATOR METHDO bar bar run hoo rha hai kabhi no. h ya kabhi ch
