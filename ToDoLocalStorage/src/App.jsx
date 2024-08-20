@@ -4,7 +4,7 @@ import { TodoProvider } from "./Components";
 import { useEffect } from "react";
 
 function App() {
-  // jo todos context sai aye gye unko store kregye
+  // Jo todos context sai aye gye unko store kregye
   const [todos, setTodos] = useState([]);
 
   //define methods
