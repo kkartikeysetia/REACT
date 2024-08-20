@@ -17,7 +17,7 @@ function Login() {
       <h2>Login</h2>
       <input
         type="text"
-        // state hava mai h value control krni h
+        // State hava mai h value control krni h
         value={username}
         // koi change hoga vo state bhi update honi chahiye
         onChange={(e) => {
