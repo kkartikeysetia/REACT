@@ -21,7 +21,7 @@ function App() {
     setConvertedAmount(amount);
     setAmount(convertedAmount);
   };
-  // yeh vo state h jo  final result display kregye
+  // Yeh vo state h jo  final result display kregye
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to]);
   };
