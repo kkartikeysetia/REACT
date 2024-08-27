@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* to swicth from one page to another */}
+      {/*to swicth from one page to another */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fav" element={<Fav />} />
